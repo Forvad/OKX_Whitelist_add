@@ -42,9 +42,9 @@ def add_whitelist(chain: str) -> None:
         'authorization': Token,
     })
     chain_id = {'polygon': "1696", 'zksync': '2', 'ethereum': '2', 'arbitrum': '2', 'optimism': '2', 'core': '2806',
-                'fantom': "307", 'avalanche': '1532', 'bsc': '1896'}
+                'fantom': "307", 'avalanche': '1532', 'bsc': '1896', "celo": "1453"}
     chain_id_sub = {'zksync': 409517, 'avalanche': 1790, 'polygon': 1787, 'arbitrum': 1917, 'optimism': 1999,
-                    'fantom': 1782, 'ethereum': 2, 'core': 2806, 'bsc': 1896}
+                    'fantom': 1782, 'ethereum': 2, 'core': 2806, 'bsc': 1896, "celo": 1453}
 
     addresses = check_whitelist(session, chain_id[chain], chain_id_sub[chain])
     x = lambda a: a // -20 * -1
